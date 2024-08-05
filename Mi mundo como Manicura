@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Manicurista</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf0ff;
+            color: #5a0c64;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff8ef1;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2.5em;
+            color: #fff;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff4ecb;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .presentation, .contact, .blog {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 1.5em;
+        }
+        .services, .calendar, .gallery {
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+        }
+        footer {
+            background-color: #ff8ef1;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .gallery {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .gallery h2 {
+            text-align: center;
+            font-family: 'Brush Script MT', cursive;
+            color: #5a0c64;
+            margin-bottom: 20px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Bienvenida a mi Mundo de Manicura
+</header>
+
+<nav>
+    <a href="#presentation">Presentación</a>
+    <a href="#services">Servicios</a>
+    <a href="#calendar">Reservar Turno</a>
+    <a href="#contact">Contacto</a>
+    <a href="#blog">Blog</a>
+    <a href="#gallery">Galería</a>
+</nav>
+
+<section id="presentation" class="presentation">
+    <h2>Presentación</h2>
+    <p>Hola, soy [Virginia Santos], una apasionada manicurista. Te ayudo a embellecer y cuidar tus uñas, realzando la belleza natural de tus manos, para que puedan lucir hermosas y cuidadas. Explora mi trabajo y reserva tu turno. ¡Bienvenido!</p>
+</section>
+
+<section id="services" class="services">
+    <h2>Servicios</h2>
+    <ul>
+        <li>Manicura clásica</li>
+        <li>Manicura Rusa</li>
+        <li>Extenciones en gel</li>
+        <li>Esmaltado en gel</li
+        <li>Diseños personalizados</li>
+    </ul>
+</section>
+
+<section id="calendar" class="calendar">
+    <h2>Reservar Turno</h2>
+    <p>Selecciona una fecha disponible en el calendario para reservar tu turno. Luego serás redirigida a la página de pago.</p>
+    <div id="calendar"></div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <p>Para contratar mis servicios, puedes contactarme a través de:</p>
+    <p>Email: [rosas_1606@hotmail.com]</p>
+    <p>Teléfono: [tu teléfono]</p>
+    <p>Redes Sociales: [Enlaces a tus redes sociales]</p>
+</section>
+
+<section id="blog" class="blog">
+    <h2>Blog</h2>
+    <p>Bienvenida a mi blog personal, donde comparto mis experiencias y aventuras como manicurista y emprendedora. ¡Espero que disfrutes leyendo!</p>
+    <!-- Aquí puedes ir agregando entradas de blog -->
+<section id="presentation" class="presentation">
+    <h2>Presentación</h2>
+    <p>Hola, soy [Tu Nombre], una amante de la estética, la manicura, los colores y la vida. A lo largo del tiempo, he adquirido conocimientos como maquilladora, masajista y en micropigmentación. Sin embargo, fue en el área de la manicura donde encontré mi verdadera pasión. Me he especializado en varias técnicas como acrílico y geles, y me dedico a embellecer las uñas con amor y creatividad. Te invito a entrar a mi blog, donde comparto mi día a día como manicurista y emprendedora. ¡Bienvenida a mi mundo de manicura!</p>
+</section>
+
+
+<section id="gallery" class="gallery">
+    <h2>Galería de Fotos</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="ruta-a-tu-imagen1.jpg" alt="Descripción de la imagen 1">
+        </div>
+        <div class="gallery-item">
+            <img src="ruta-a-tu-imagen2.jpg" alt="Descripción de la imagen 2">
+        </div>
+        <div class="gallery-item">
+            <img src="ruta-a-tu-imagen3.jpg" alt="Descripción de la imagen 3">
+        </div>
+        <!-- Añade más imágenes según lo necesites -->
+    </div>
+</section>
+
+<footer>
+    &copy; 2024 [Virginia Santos] - Todos los derechos reservados
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: ['dayGrid'],
+            headerToolbar: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth'
+            },
+            initialView: 'dayGridMonth',
+            editable: true,
+            selectable: true,
+            events: [
+                // Aquí puedes agregar eventos si tienes algunos, por ejemplo:
+                // { title: 'Evento 1', start: '2024-08-07' }
+            ],
+            dateClick: function(info) {
+                // Acción cuando se hace clic en una fecha
+                var selectedDate = info.dateStr;
+                alert('Fecha seleccionada: ' + selectedDate);
+                // Aquí puedes redirigir al usuario a la página de pago o reservar turno
+                // window.location.href = 'pagina-de-pago.html?date=' + selectedDate;
+            }
+        });
+
+        calendar.render();
+    });
+</script>
+
+</body>
+</html>
